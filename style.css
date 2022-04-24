@@ -1,3 +1,103 @@
+body{
+    color:aliceblue;
+    display:flex;
+    flex-direction: column;
+    margin-top: 10%;
+    background-color: black;
+
+}
 .hidden{
     display: none;
+}
+img{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+#greeting{
+    padding-bottom: 0;
+}
+#geolocation{
+    position:fixed;
+    right: 2%;
+    top:5%;
+}
+#time{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#todayDate{
+    font-size: large;
+    padding:0;
+}
+#clock{
+    font-size:10rem;
+    margin: 0;
+}
+input {
+    width: 20rem;
+    height: 3rem;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin:0;
+    background-color:aliceblue;
+}
+.add{
+    width: 5rem;
+    height: 3rem;
+    font-size: 15px;
+    border: none;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left:-5rem;
+    outline: none;
+    background-color:aliceblue;
+}
+#dropdown{  
+    border:none;
+    color:aliceblue;
+    background-color: transparent;
+    font-size: large;
+    outline: none;
+    position: absolute;
+    padding-top: 2rem;
+    left:5%;
+    top:90%;
+}
+#todo_elements{
+    position: absolute;
+    left:2%;
+    bottom:10%;
+}
+ul{
+    overflow:auto;
+    height:7rem;
+    width: 20rem;
+}
+.btn{
+    background-color: transparent;
+    border:none;
+}
+#ddaybtn{  
+    border:none;
+    color:aliceblue;
+    background-color: transparent;
+    font-size: large;
+    outline: none;
+    position: absolute;
+    padding-top: 2rem;
+    right:5%;
+    top:90%;
+}
+#dday{
+    position: absolute;
+    right:2%;
+    bottom:10%;
 }

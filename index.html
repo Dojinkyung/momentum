@@ -7,34 +7,37 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
-
-    <div>
-        <h1 id="todayDate"></h1>
-        <h1 id="clock"></h1>
+<body> 
+    <div id="geolocation">
+        <span></span>
+        <span></span>
     </div>
+    <div id="time">
+        <h1 id="clock"></h1>
+        <h1 id="todayDate"></h1>  
         <form id="login_form">
             <input  
                 required
                 maxlength="15" 
                 type="text" 
                 placeholder="What is your name?">
-            <button>LogIn</button>
+            <button class="add">LogIn</button>
         </form>
         <h1 class="hidden" id="greeting"><h1>
-    <form id="toDo_form">
-        <input  
-            required 
-            type="text" 
-            placeholder="ToDo!">
-        <button>Add Todo</button>
-    </form>
-    <ul id="todo_list"> 
-    </ul>
-    <div id="geolocation">
-        <span></span>
-      <span></span>
     </div>
+    <div id="todo_elements" class="hidden"> 
+        <ul id="todo_list"> 
+        </ul> 
+        <form id="toDo_form">
+            <input  
+                required 
+                type="text" 
+                placeholder="ToDo!">
+            <button class="add">Add</button>
+        </form>
+    </div>
+    <button id="dropdown">ToDo</button>
+    
 
 
 </body>   
@@ -43,4 +46,5 @@
     <script src="./src/logIn.js"></script>
     <script src="./src/toDo.js"></script>
     <script src="./src/geolocation.js"></script>
+    <script src="./src/dday.js"></script>
 </html>

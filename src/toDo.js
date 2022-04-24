@@ -1,6 +1,7 @@
 const toDoForm=document.querySelector("#toDo_form");
 const toDoInput=document.querySelector("#toDo_form input");
 const todoList=document.querySelector("#todo_list");
+const dropdown=document.getElementById("dropdown");
 let TODOs=[];
 const TODO_KEY="TODO"
 function deleteTodo(event){
@@ -21,6 +22,7 @@ function createTodoList(newTodo){
     li.appendChild(span);
     li.appendChild(button);
     button.innerText="❌";
+    button.classList.add("btn");
     button.addEventListener("click",deleteTodo);
     span.innerText=newTodo.text;
     todoList.appendChild(li);
@@ -46,3 +48,12 @@ if (localStorage.getItem(TODO_KEY)){
     TODOs=savedTODOS;
     savedTODOS.forEach(createTodoList);
 }
+
+
+const todoElements=document.getElementById("todo_elements");
+function dropDownTodo(){
+
+    todoElements.classList.toggle("hidden");
+}
+
+dropdown.addEventListener("click",dropDownTodo);

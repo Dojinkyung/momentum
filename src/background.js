@@ -7,10 +7,11 @@ const img=["https://cdn.pixabay.com/photo/2022/04/14/20/59/strawberries-7133242_
 "https://cdn.pixabay.com/photo/2020/01/09/03/43/mansion-4751778_960_720.jpg",
 "https://cdn.pixabay.com/photo/2022/03/06/06/42/flowers-7050948_960_720.jpg",
 "https://cdn.pixabay.com/photo/2021/11/20/13/47/sky-6811874_960_720.jpg"];
-const background=document.createElement("img");
+const background=document.querySelector("body");
     
 const chosenImg=img[Math.floor(Math.random()*img.length)];
-    
-background.src=`${chosenImg}`;
-    
-document.body.appendChild(background);
+const backgroundImg="url('"+chosenImg+"')";
+background.style.backgroundImage=backgroundImg;
+background.style.backgroundRepeat = "no-repeat";
+background.style.backgroundSize="cover";
+background.style.backgroundPosition="center center";
